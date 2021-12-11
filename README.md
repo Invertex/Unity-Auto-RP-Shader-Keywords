@@ -1,2 +1,3 @@
-# Unity-Auto-RP-Shader-Keywords
-Automatically sets a global shader keyword depending on whether URP or HDRP is currently being used, allow you to properly conditionally compile your shaders for more than one pipeline.
+Automatically sets global shader keywords depending on whether URP or HDRP is currently installed as well as which is currently active, allowing you to properly conditionally compile your shaders for more than one pipeline and also have them swap shader variants automatically at runtime.
+
+In Unity 2021 this script will automatically detected when pipeline has been removed/swapped and update its values. If you are on older version, then you must either reimport the script or restart Unity for it to be able to apply its changes, since there does not appear to be any sort of fired events when pipeline is changed in older versions.
